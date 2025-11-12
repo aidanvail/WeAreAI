@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Institute • GenAI Adoption in Built Environment (Report Preview)</title>
+  <!-- Fonts (brand) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="ai-institute-style.css">
+  <link rel="stylesheet" href="report.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">AI Institute • November 2025</div>
+      <h1>GenAI Adoption in Built Environment Firms</h1>
+      <p class="lead">Insights on AI adoption across Ireland and the UK — presented as a web-native report with a persistent contents panel for rapid navigation. This branded preview mirrors the live site’s fonts, colours and spacing.</p>
+      <div class="note">Paste your final report text into each section below (replace the placeholder paragraphs). Keep only the H2/H3 hierarchy.</div>
+    </header>
+
+    <main class="grid">
+      <aside class="sidebar">
+        <h3>Contents</h3>
+        <nav class="toc">
+          <a class="toc-link" href="#executive-summary">Executive Summary</a>
+          <a class="toc-link" href="#whats-happening">What’s Really Happening</a>
+          <a class="toc-link" href="#playbook">The Playbook for AI Success</a>
+          <a class="toc-link" href="#industry-context">Industry Context</a>
+          <a class="toc-link" href="#current-adoption">Current Adoption</a>
+          <a class="toc-link" href="#implementation">Implementation Insights</a>
+          <a class="toc-link" href="#barriers">Barriers</a>
+          <a class="toc-link" href="#path-forward">The Path Forward</a>
+          <a class="toc-link" href="#conclusion">Conclusion</a>
+          <a class="toc-link" href="#methodology">Methodology</a>
+          <a class="toc-link" href="#appendices">Appendices</a>
+        </nav>
+      </aside>
+
+      <article class="content">
+        <section class="section" id="executive-summary">
+          <h2>Executive Summary</h2>
+          <p>Paste the Executive Summary here. Tip: keep short lead paragraphs and move data tables to Appendices if long.</p>
+        </section>
+
+        <section class="section" id="whats-happening">
+          <h2>What’s Really Happening in Engineering, Architecture, and Construction</h2>
+          <p>Paste this section here. You can use bullet lists for key observations.</p>
+          <ul>
+            <li>Example insight 1</li>
+            <li>Example insight 2</li>
+          </ul>
+        </section>
+
+        <section class="section" id="playbook">
+          <h2>The Playbook for AI Success</h2>
+          <h3>1) Establish Governance from the Top</h3>
+          <p>Paste text…</p>
+          <h3>2) Train Everyone, Immediately</h3>
+          <p>Paste text…</p>
+          <h3>3) Invest in Custom or Narrow AI</h3>
+          <p>Paste text…</p>
+        </section>
+
+        <section class="section" id="industry-context">
+          <h2>Industry Context</h2>
+          <p>Paste text…</p>
+        </section>
+
+        <section class="section" id="current-adoption">
+          <h2>Current Adoption: What’s Working and What’s Not</h2>
+          <p>Paste text…</p>
+          <ul>
+            <li>Data point or stat…</li>
+            <li>Data point or stat…</li>
+          </ul>
+        </section>
+
+        <section class="section" id="implementation">
+          <h2>Implementation Insights: Learning from Leaders</h2>
+          <p>Paste text…</p>
+        </section>
+
+        <section class="section" id="barriers">
+          <h2>Barriers: The Real Reasons Firms Aren’t Moving</h2>
+          <p>Paste text…</p>
+        </section>
+
+        <section class="section" id="path-forward">
+          <h2>The Path Forward: Five Essential Actions</h2>
+          <ol>
+            <li>Create leadership-owned AI Policy.</li>
+            <li>Deploy universal AI literacy training.</li>
+            <li>Introduce automation for specific processes.</li>
+            <li>Standardise and clean data.</li>
+            <li>Invest strategically (narrow tools + proprietary systems).</li>
+          </ol>
+        </section>
+
+        <section class="section" id="conclusion">
+          <h2>Conclusion: The Window Is Closing</h2>
+          <p>Paste text…</p>
+        </section>
+
+        <section class="section" id="methodology">
+          <h2>Methodology</h2>
+          <p>Paste text…</p>
+        </section>
+
+        <section class="section" id="appendices">
+          <h2>Appendices</h2>
+          <h3>Appendix 1: Research Methodology</h3>
+          <p>Paste text…</p>
+          <h3>Appendix 2: AI Policy Template</h3>
+          <p>Paste text…</p>
+        </section>
+
+        <div class="footer">© AI Institute, 2025 • Private preview for client approval</div>
+      </article>
+    </main>
+  </div>
+
+  <script>
+    // Scrollspy
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = Array.from(document.querySelectorAll('.toc-link'));
+      const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const id = '#' + entry.target.id;
+          const link = links.find(a => a.getAttribute('href') === id);
+          if (!link) return;
+          if (entry.isIntersecting) {
+            links.forEach(l => l.classList.remove('is-active'));
+            link.classList.add('is-active');
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+      sections.forEach(sec => observer.observe(sec));
+    });
+  </script>
+</body>
+</html>
